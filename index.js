@@ -8,4 +8,10 @@ app.post("/dbl", wb.listener(vote => {
     console.log(vote);
 }));
 
+app.get("/", (req, res) => {
+    res.send("OKE!");
+});
+
+console.log(`Listening in port: 3k`);
+
 app.listen(3000);
